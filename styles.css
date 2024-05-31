@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #03001C;
+}
+
+.logo img {
+    max-height: 20vh;
+    margin: 0px 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 120px;
+    padding: 5px;
+}
+
+nav ul li {
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight:normal;
+    background: linear-gradient(to left, #03001C 50%, #B6EADA 50%) right;
+    background-size: 250%;
+    transition: 0.5s ease-out;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #B6EADA;
+    color: #000000;
+    border-radius: 5px;
+    background-position: left;
+}
+
+nav ul li .contact{
+    border: 2px solid#B6EADA;
+    padding: 18px 30px;
+}
+
+main {
+    padding: 0px;
+    margin: 0;
+}
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #03001C;
+    color: white;
+}
+
+.content {
+    margin: 0px 120px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin:0px 0px 0px 60px;
+    font-weight:300;
+}
+
+.content p {
+    margin-bottom: 10px;
+    margin-left: 60px;
+    font-size: 24px;
+    font-weight:200;
+}
+
+.content ul li {
+    margin-left: 60px;
+    font-size: 24px;
+    font-weight:200;
+}
+
+.image img {
+    width: 400px;
+    height: 490px;
+    display: block;
+    margin: 0px 250px;
+    filter: grayscale(100%);
+}
+.image img:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+
+
+.buttons {
+    margin: 0px 60px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.btn {
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.btn.primary {
+    padding: 20px 50px;
+    background-color: #B6EADA;
+    border: 2px solid #B6EADA;
+    color: #000000;
+}
+
+.btn.primary:hover {
+    transition: 0.5s;
+    background-color: #03001C;
+    color: #ffffff;
+}
+
+.btn.secondary {
+    padding: 20px 30px;
+    background-color: #03001C;
+    border: 2px solid #B6EADA;
+    color: white;
+
+}
+
+.btn.secondary:hover {
+    transition: 0.5s;
+    background-color: #B6EADA;
+    color: #000000;
+}
+
+.services{
+    text-align: center;
+    background-color: #03001C;
+    color: white;
+    padding: 10px;
+}
+
+.services h1{
+    font-size: 50px;
+    font-weight:300;
+
+}
+.services p{
+    margin: auto;
+    width: 680px;
+    font-size: 22px;
+    font-weight:200;
+    margin-bottom: 40px;
+}
+
+
+.cards{
+    color: #ffffff;
+    background-color: #03001C;
+}
+
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 120px;
+}
+
+.card1 , .card2 , .card3{
+    background-color: #301e67;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+.card1:hover, .card2:hover , .card3:hover{
+    background-color: #5B8FB9;
+    transition: 0.5s;
+}
+
+.card1 img, .card2 img , .card3 img{
+    height: 50px;
+    width: 45px;
+    margin: 50px 0 0 50px;
+}
+
+.card1 p, .card2 p , .card3 p{
+    font-size: 40px;
+    font-weight:300;
+    margin: 20px 0 0 50px;
+}
+
+.detail{
+    padding: auto;
+    color: #ffffff;
+    background-color: #03001C;
+}
+.detail-rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 120px;
+}
+
+.item1 , .item2 , .item3{
+    width: 400px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.item1 h1, .item2 h1 , .item3 h1{
+    font-size: 50px;
+    line-height: 1px;
+    font-weight:300;
+    text-align: center;
+}
+
+.item1 p, .item2 p , .item3 p{
+    line-height: 1px;
+    font-size: 20px;
+    font-weight:200;
+    text-align: center;
+}
+
+.project{
+    text-align: center;
+    background-color: #03001C;
+    color: white;
+    padding: 10px;
+}
+
+.project h1{
+    font-size: 50px;
+    font-weight:300;
+}
+
+.projectItems{
+    background-color:#03001C;
+    display: flex;
+    color: white;
+}
+
+.projectItems .todo1 img {
+    width: 900px;
+    height: 400px;
+    margin: 0px 10px 40px 180px;
+    filter: grayscale(100%);
+}
+.projectItems .todo1 img:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+
+.todoContent1{
+    margin:0 150px 0 0;
+}
+
+.todoContent1 h1 {
+    font-size: 35px;
+    font-weight:300;
+}
+
+.todoContent1 p {
+    font-size: 24px;
+    font-weight:200;
+}
+
+/* ------------------------------ */
+.todoContent2{
+    margin: 0px 0px 40px 180px;
+}
+
+.todoContent2 h1 {
+    font-size: 35px;
+    font-weight:300;
+}
+
+.todoContent2 p {
+    font-size: 24px;
+    font-weight:200;
+}
+
+.projectItems .todo2 img {
+    width: 900px;
+    height: 400px;
+    margin: 0px 180px 40px 10px;
+    filter: grayscale(100%);
+}
+
+.projectItems .todo2 img:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+
+.getInTouch{
+    text-align: center;
+    background-color: #03001C;
+    color: white;
+    padding: 10px;
+}
+
+.getInTouch h1{
+    font-size: 50px;
+    font-weight:300;
+
+}
+.getInTouch p{
+    margin: auto;
+    width: 1045px;
+    font-size: 22px;
+    font-weight:200;
+    margin-bottom: 40px;
+}
+
+.information{
+    background-color: #03001C;
+}
+
+.formPage{
+    display: flex;
+    flex-wrap: wrap;
+    /* form ko input  */
+    input, textarea{
+        color: #ffffff;
+        font-size: 20px;
+        }
+    button{
+        font-size: 20px;     
+    }
+}
+
+.information .formPage .info{
+    margin: 0px 10px 40px 180px;
+    width: 720px;
+    height: 250px;
+}
+
+.information .formPage .info .fullName, .email, .pNumber{
+    background-color: #03001c;
+    border: 2px solid #B6EADA;
+    width: 750px;
+    height: 75px;
+    margin: 0 0 25px 0;
+}
+.information .formPage .info .fullName::placeholder, .email::placeholder, .pNumber::placeholder{
+    color: #B6EADA;
+    font-size: 20px;
+}
+
+.information .formPage .message{
+    margin: 0px 10px 40px 60px;
+    width: 600px;
+    height: 230px;
+}
+
+.information .formPage .message .yourMessage{
+    background-color: #03001c;
+    border: 2px solid #B6EADA;
+    height: 175px;
+    width: 800px;
+    margin: 0 0 18px 0;
+}
+.information .formPage .message .yourMessage::placeholder{
+    color: #B6EADA;
+    font-size: 20px;
+}
+
+.information .formPage .message .submitButton{
+    color: #03001c;
+    border: 2px solid #B6EADA;
+    background-color: #B6EADA;
+    height: 75px;
+    width: 800px;
+}
+
+.information .formPage .message .submitButton:hover{
+    background-color: #03001c;
+    border: 2px solid #B6EADA;
+    color: #B6EADA;
+    transition: 0.5s;
+}
+
+footer{
+    background-color:#03001c;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
