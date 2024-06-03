@@ -258,11 +258,16 @@ main {
     display: flex;
     color: white;
 }
-
-.projectItems .todo1 img {
-    width: 900px;
+.projectItems .todo1{
+    /* width: 900px; */
+    width: 100%;
     height: 400px;
     margin: 0px 10px 40px 180px;
+}
+.projectItems .todo1 img {
+    /* width: 900px; */
+    width: 100%;
+    height: 400px;
     filter: grayscale(100%);
 }
 .projectItems .todo1 img:hover {
@@ -271,7 +276,7 @@ main {
 }
 
 .todoContent1{
-    margin:0 150px 0 0;
+    margin:0 150px 0 0;;
 }
 
 .todoContent1 h1 {
@@ -284,7 +289,6 @@ main {
     font-weight:200;
 }
 
-/* ------------------------------ */
 .todoContent2{
     margin: 0px 0px 40px 180px;
 }
@@ -299,10 +303,17 @@ main {
     font-weight:200;
 }
 
-.projectItems .todo2 img {
-    width: 900px;
+.projectItems .todo2{
+    /* width: 900px; */
+    width: 100%;
     height: 400px;
     margin: 0px 180px 40px 10px;
+}
+
+.projectItems .todo2 img {
+    width: 100%;
+    /* width: 900px; */
+    height: 400px;
     filter: grayscale(100%);
 }
 
@@ -310,6 +321,7 @@ main {
     transition: 0.5s;
     filter: grayscale(0%);
 }
+
 
 .getInTouch{
     text-align: center;
