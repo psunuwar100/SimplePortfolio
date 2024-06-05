@@ -129,7 +129,7 @@ header {
     padding: 20px 30px;
     background-color: #03001C;
     border: 2px solid #B6EADA;
-    color: white;
+    color: #ffffff;
 
 }
 
@@ -141,7 +141,7 @@ header {
 
 .services{
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .services h1{
@@ -224,7 +224,7 @@ header {
 
 .project{
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .project h1{
@@ -234,7 +234,7 @@ header {
 
 .projectItems{
     display: flex;
-    color: white;
+    color: #ffffff;
     gap: 4rem;
     margin: 0 0 100px 0;
 }
@@ -302,9 +302,8 @@ header {
 
 .getInTouch{
     text-align: center;
-    color: white;
+    color: #ffffff;
     display: inline;
-    margin-bottom: 40px;
 }
 
 .getInTouch h1{
@@ -315,6 +314,7 @@ header {
     width: 100%;
     font-size: 22px;
     font-weight:200;
+    margin-bottom: 40px;
 }
 
 /* .information{
@@ -336,14 +336,15 @@ header {
     width: 100%;
 }
 
-.information .formPage .info .fullName, .email, .pNumber{
+.info .fullName, .email, .pNumber{
     background-color: #03001c;
     border: 2px solid #B6EADA;
     width: 95%;
     height: 75px;
     margin: 0 0 25px 0;
+    padding: 2rem;
 }
-.information .formPage .info .fullName::placeholder, .email::placeholder, .pNumber::placeholder{
+ .fullName::placeholder, .email::placeholder, .pNumber::placeholder{
     color: #B6EADA;
     font-size: 20px;
 }
@@ -352,19 +353,20 @@ header {
     width: 100%;
 }
 
-.information .formPage .message .yourMessage{
+.formPage .message .yourMessage{
     background-color: #03001c;
     border: 2px solid #B6EADA;
     height: 175px;
     width: 95%;
     margin: 0 0 18px 0;
+    padding: 1rem;
 }
-.information .formPage .message .yourMessage::placeholder{
+.message .yourMessage::placeholder{
     color: #B6EADA;
     font-size: 20px;
 }
 
-.information .formPage .message .submitButton{
+.message .submitButton{
     color: #03001c;
     border: 2px solid #B6EADA;
     background-color: #B6EADA;
@@ -372,14 +374,14 @@ header {
     width: 95%;
 }
 
-.information .formPage .message .submitButton:hover{
+.submitButton:hover{
     background-color: #03001c;
     border: 2px solid #B6EADA;
     color: #B6EADA;
     transition: 0.5s;
 }
 
-footer{
+.designer{
     color: #ffffff;
     font-size: 18px;
     font-weight: 300;
