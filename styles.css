@@ -149,19 +149,20 @@ header {
 .btn.primary:hover {
     transition: 0.5s;
     background-color: var(--darkBlue);
-    color: #ffffff;
+    color: var(--white);
 }
 
-.btn.secondary {
+.download{
     padding: 20px 30px;
     background-color: var(--darkBlue);
-    border: 2px solid #B6EADA;
-    color: #ffffff;
+    border: 2px solid var(--cyan);
+    color: var(--white);
+    text-decoration: none;
 }
 
-.btn.secondary:hover {
+.download:hover{
     transition: 0.5s;
-    background-color: #B6EADA;
+    background-color: var(--cyan);
     color: var(--black);
 }
 
