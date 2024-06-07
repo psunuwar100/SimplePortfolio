@@ -16,13 +16,13 @@
     --font-regular: 400;
   
     /* Font-size */
-    --font-size-small: 18px;
-    --font-size-medium: 20px;
-    --font-size-large: 22px;
-    --font-size-extralarge: 24px;
-    --font-size-x-large: 35px;
-    --font-size-xl-large: 40px;
-    --font-size-2xl-large: 50px;
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 16px;
+    --font-size-extralarge: 18px;
+    --font-size-x-large: 25px;
+    --font-size-xl-large: 32px;
+    --font-size-2xl-large: 40px;
     --font-logo: 20vh;
   }
 
@@ -68,14 +68,14 @@ header {
     color: var(--white);
     text-decoration: none;
     font-weight: var(--font-regular);
-    background: linear-gradient(to left, var(--darkBlue) 50%, #B6EADA 50%) right;
-    background-size: 250%;
+    background: linear-gradient(to left, var(--darkBlue) 50%, var(--cyan) 50%) right;
+    background-size: 200%;
     transition: 0.5s ease-out;
     padding: 10px;
 }
 
 .navbar a:hover {
-    background-color: #B6EADA;
+    background-color: var(--cyan);
     color: var(--black);
     border-radius: 5px;
     background-position: left;
@@ -83,20 +83,26 @@ header {
 
 .navbar .top li .contact{
     border: 2px solid var(--cyan);
-    padding: 18px 30px;
+    padding: 10px 20px;
 }
 
 .sticky-nav {
     position:fixed;
-    right: 100px;
+    right: 50px;
     bottom: 0px;
-    width: 50px; /* Adjust width as needed */
-    padding: 10px;
+    /* width: 20px; Adjust width as needed */
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: transparent;
+
+        img{
+        width: 35px;
+        }
+
   }
+  
   
   .sticky-nav a {
     text-decoration: none;
@@ -105,7 +111,7 @@ header {
 
 
 .Container{
-    margin: 0 240px;
+    margin: 0 150px;
 }
 
 .intro{
@@ -114,6 +120,7 @@ header {
     justify-content: space-between;
     color: var(--white);
     margin: 0 0 10rem 0;
+    /* gap: 200px; */
 }
 
 .content h1 {
@@ -133,8 +140,8 @@ header {
 }
 
 .image img {
-    width: 450px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     display: block;
     filter: grayscale(100%);
 }
@@ -158,7 +165,7 @@ header {
 }
 
 .btn.primary {
-    padding: 20px 50px;
+    padding: 15px 40px;
     background-color: var(--cyan);
     border: 2px solid var(--cyan);
     color: var(--darkBlue);
@@ -171,9 +178,10 @@ header {
 }
 
 .download{
-    padding: 20px 30px;
+    padding: 15px 25px;
     background-color: var(--darkBlue);
     border: 2px solid var(--cyan);
+    border-radius: 5px;
     color: var(--white);
     text-decoration: none;
 }
@@ -208,13 +216,16 @@ header {
 }
 
 .rows{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card1 , .card2 , .card3{
     background-color: var(--darkPurple);
-    width: 400px;
+    width: 350px;
     height: 300px;
     margin-bottom: 40px;
 }
@@ -242,12 +253,15 @@ header {
 }
 
 .detail-rows{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item1 , .item2 , .item3{
-    width: 400px;
+    width: 350px;
     height: 120px;
     margin-bottom: 20px;
 }
@@ -279,7 +293,7 @@ header {
 .projectItems{
     display: flex;
     color: var(--white);
-    gap: 4rem;
+    gap: 3rem;
     margin: 0 0 100px 0;
 }
 
@@ -301,6 +315,11 @@ header {
 
 .todoContent1{
     width: 50%;
+
+    img{
+        width: 30px;
+    }
+
 }
 
 .todoContent1 h1 {
@@ -317,6 +336,11 @@ header {
 
 .todoContent2{
     width: 50%;
+
+    img{
+        width: 30px;
+    }
+
 }
 
 .todoContent2 h1 {
@@ -388,9 +412,9 @@ header {
     background-color: var(--darkBlue);
     border: 2px solid var(--cyan);
     width: 95%;
-    height: 75px;
+    height: 50px;
     margin: 0 0 25px 0;
-    padding: 2rem;
+    padding: 1rem;
 }
 
  .fullName::placeholder, .email::placeholder, .pNumber::placeholder{
@@ -404,8 +428,8 @@ header {
 .formPage .message .yourMessage{
     background-color: var(--darkBlue);
     border: 2px solid var(--cyan);
-    height: 175px;
-    width: 95%;
+    height: 125px;
+    width: 100%;
     margin: 0 0 18px 0;
     padding: 1rem;
 }
@@ -419,8 +443,8 @@ header {
     color: var(--darkBlue);
     border: 2px solid var(--cyan);
     background-color: var(--cyan);
-    height: 75px;
-    width: 95%;
+    height: 50px;
+    width: 100%;
 }
 
 .submitButton:hover{
