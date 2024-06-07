@@ -52,14 +52,14 @@ header {
     max-height: var(--font-logo);
 }
 
-.navbar ul {
+.navbar .top {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
 }
 
-.navbar ul li {
+.navbar .top li {
     margin-left: 50px;
     font-size: var(--font-size-extralarge);
 }
@@ -81,10 +81,28 @@ header {
     background-position: left;
 }
 
-.navbar ul li .contact{
+.navbar .top li .contact{
     border: 2px solid var(--cyan);
     padding: 18px 30px;
 }
+
+.sticky-nav {
+    position:fixed;
+    right: 100px;
+    bottom: 0px;
+    width: 50px; /* Adjust width as needed */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+  }
+  
+  .sticky-nav a {
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+  }
+
 
 .Container{
     margin: 0 240px;
@@ -346,8 +364,10 @@ header {
     font-weight:var(--font-extralight);
     margin-bottom: 40px;
 }
-/* .information{
-} */
+.information{
+    margin: 0 0 100px 0;
+}
+
 .formPage{
     display: flex;
     /* form ko input  */
@@ -360,7 +380,7 @@ header {
     }
 }
 
-.information .formPage .info{
+.formPage .info{
     width: 100%;
 }
 
@@ -377,8 +397,7 @@ header {
     color: var(--cyan);
     font-size: var(--font-size-medium);
 }
-
-.information .formPage .message{
+.formPage .message{
     width: 100%;
 }
 
